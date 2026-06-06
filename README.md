@@ -50,3 +50,5 @@ colecao: É uma array de objetos que guarda o inventário das joias antigas. Cad
 
 ![alt text](image-5.png)
 ![alt text](image-6.png)
+
+os charts tem como principal funçao exibir graficos pizza, barras e rosca com os principais dados dos produtos e alem disso no topo da pagina mostram um resumo das estatisticas. 
