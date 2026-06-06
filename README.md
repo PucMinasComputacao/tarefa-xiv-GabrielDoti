@@ -42,3 +42,11 @@ colecao: É uma array de objetos que guarda o inventário das joias antigas. Cad
 <<  COLOQUE A IMAGEM - TELA DO CONSOLE - AQUI >>
 
 ![alt text](image-2.png)
+
+<< SEMANA 14 PRINTS >>
+
+![alt text](image-3.png)
+![alt text](image-4.png)
+
+![alt text](image-5.png)
+![alt text](image-6.png)

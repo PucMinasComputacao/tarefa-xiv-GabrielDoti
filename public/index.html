@@ -22,12 +22,17 @@
     <ul>
       <li><a href="index.html">Acervo</a></li>
       <li><a href="index.html">Novidades</a></li>
+      <li><a href="charts.html">Visualização</a></li>
     </ul>
   </nav>
 </header>
 
 <main>
   <h2 class="section-title">Acervo Completo</h2>
+  <div class="charts-banner">
+    <p>Explore os dados do acervo em gráficos interativos</p>
+    <a href="charts.html" class="btn-charts">&#9998; Ver Visualização do Acervo</a>
+  </div>
   <div id="loading">Carregando peças do acervo…</div>
   <div id="error-msg">Não foi possível conectar à API. Certifique-se de que o JSON Server está rodando (<code>npx json-server db.json</code>).</div>
   <div id="cards-grid"></div>

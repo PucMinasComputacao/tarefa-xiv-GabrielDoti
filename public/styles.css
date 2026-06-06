@@ -125,7 +125,11 @@ header.detalhes {
   gap: 1.5rem;
   position: relative;
   overflow: hidden;
+  flex-wrap: wrap;
 }
+header.detalhes nav { border-top: none; }
+header.detalhes nav ul { gap: 0; }
+header.detalhes nav a { padding: .5rem 1rem; font-size: .72rem; }
 header.detalhes::before {
   content: '';
   position: absolute; inset: 0;
@@ -407,4 +411,40 @@ footer::before {
 }
 @media (max-width: 600px) {
   nav a { padding: .8rem 1rem; }
+}
+
+/* ── BANNER DE GRÁFICOS (home) ── */
+.charts-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--dark);
+  border: 1px solid rgba(184,151,106,.25);
+  padding: 1rem 1.5rem;
+  margin-bottom: 2.5rem;
+  gap: 1rem;
+}
+.charts-banner p {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--gold-light);
+}
+.btn-charts {
+  display: inline-block;
+  white-space: nowrap;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  text-decoration: none;
+  padding: .55rem 1.4rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: .76rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  transition: background .3s, color .3s;
+}
+.btn-charts:hover { background: var(--gold); color: var(--dark); }
+
+@media (max-width: 500px) {
+  .charts-banner { flex-direction: column; text-align: center; }
 }
