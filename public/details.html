@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detalhes — Coleção Joia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Marcellus&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="detalhes">
+  <a class="header-brand" href="index.html">
+    <img src="https://picsum.photos/seed/joia/250/150" alt="Logo" />
+    <span>Coleção Joia</span>
+  </a>
+  <a class="btn-voltar" href="index.html">
+    <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+    Voltar ao Acervo
+  </a>
+</header>
+
+<main class="detalhes">
+  <p id="loading-det">Carregando informações da peça…</p>
+  <p id="error-det">Não foi possível conectar à API. Verifique se o JSON Server está rodando (<code>npx json-server db.json</code>).</p>
+  <p id="not-found">Peça não encontrada no acervo.</p>
+
+  <section id="detalhe">
+    <div class="detalhe-grid">
+
+      <div class="detalhe-imagem-wrap">
+        <img id="d-imagem" src="" alt="" />
+        <span class="badge-destaque" id="d-badge" style="display:none">Destaque</span>
+      </div>
+
+      <div class="detalhe-info">
+        <p class="detalhe-categoria" id="d-categoria"></p>
+        <h1 class="detalhe-titulo" id="d-titulo"></h1>
+        <div class="divider"></div>
+        <p class="detalhe-descricao" id="d-descricao"></p>
+        <p class="detalhe-preco" id="d-preco"></p>
+
+        <table class="specs">
+          <tbody>
+            <tr><td>Material</td>  <td id="d-material"></td></tr>
+            <tr><td>Ano</td>       <td id="d-ano"></td></tr>
+            <tr><td>Origem</td>    <td id="d-origem"></td></tr>
+            <tr><td>Dimensões</td> <td id="d-dimensoes"></td></tr>
+            <tr><td>Peso</td>      <td id="d-peso"></td></tr>
+            <tr><td>Estado</td>    <td id="d-estado"></td></tr>
+          </tbody>
+        </table>
+
+        <button class="btn-contato" onclick="alert('Entre em contato pelo e-mail: contato@colecaojoia.com')">
+          Consultar disponibilidade
+        </button>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h3>Sobre</h3>
+      <p>Site de coleções de artes</p>
+    </div>
+    <div class="footer-col">
+      <h3>Links</h3>
+      <ul><li><a href="#">Contato</a></li></ul>
+    </div>
+    <div class="footer-col">
+      <h3>Redes Sociais</h3>
+      <div class="social-icons">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" />
+      </div>
+    </div>
+  </div>
+  <p class="footer-bottom">&copy; 2026 Coleção Joia — Todos os direitos reservados</p>
+</footer>
+
+<script src="details.js"></script>
+</body>
+</html>
